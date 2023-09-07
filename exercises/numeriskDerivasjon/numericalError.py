@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 
 # create log spaced numbers from 10**-16 to 10**-1
 dx = np.logspace(-16, -1, 16)
+#dx = np.logspace(-16, 0, 16)
 print(dx)
 
 # array med e**deltaX
