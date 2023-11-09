@@ -7,8 +7,11 @@ init_velocity = 100 # vektor i både y og x retning
 angle = 45*3.14/180
 # angle = np.deg2rad(45) 
 g = 9.81 # gir 50 tider (sjekk med print(len(t)))
+
 T=(2*init_velocity*np.sin(angle))/g # Total time of flight
+print(f'T: {T}')
 t = np.linspace(start= 0, stop = T)
+print(f'Length of t: {len(t)}')
 
 def projectile(t):
     return (init_velocity*np.sin(angle)*t) - (0.5*g*(t**2)) 
